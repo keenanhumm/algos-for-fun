@@ -16,10 +16,6 @@ var trap = function (heights) {
   // trapped water so far
   let trapped = 0;
 
-  // difference in height btwn max barrier and current pointer for both l and r
-  let lDiff = 0;
-  let rDiff = 0;
-
   // until pointers meet
   while (l < r) {
     lMax = Math.max(lMax, heights[l]);
